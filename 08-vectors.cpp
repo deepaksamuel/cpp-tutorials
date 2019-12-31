@@ -10,24 +10,32 @@ int main()
     vector <int> a;
     vector <float> b;
 
-    
+    // to set the values
     for(int i=0; i<100; i++)
     {
         a.push_back(i);
         b.push_back(i/10);
     }
-    for(auto i=a.begin; i!=a.end(); i++)
+
+    // to print out 
+    for(auto i=a.begin();i!=a.end();i++)
     {
-        
+        cout<<*i<<endl;
     }
-    
     return 0;
 }
 
-// Remember the index is zero based. That means the index can take values from 0 to size-1. 
-// Make sure that the index is not negative or exceeds size-1 in which case the output is unpredictable and might even lead to crashes
-
+// Remember to include the file <vector> 
+// The type of vector is defined inside the angle brackets i.e <int> or <float>. 
+// To insert a value at the end of the vector, use push_back
+// In the for loop, the keyword auto is used define a variable whose type is unknown.
+// a.begin() returns the pointer to the first element (we shall see about pointers later on)
+// a.end() returns the pointer to the last element
+// i++ increments the pointer (not the value!)
+// to read the value pointed by a pointer, we use *i  
 // Assignments:
-// a) Try making the index value negative or exceeding the size of the array and see what happens.
-// a) Create a 1d float array of size 250 and fill each element in the array with 250/index
-// b) Create a 2d float array of size 3 x 3 and fill each element by the product of the indices (ixj)
+// a) Print out all the values of b
+// a) The function at(indx) returns the value at that index. Print the value of b at the 5th index (without using the for loop)
+// b) Check what happens if you print i instead of *i
+// c) Write a program that will keep asking the user to input a number until he enters -1. Print out all the numbers that the user has entered (except -1) 
+// and also the average of all the numbers.  

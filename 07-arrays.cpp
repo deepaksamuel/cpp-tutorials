@@ -22,7 +22,7 @@ int main()
 
     for(int i=0; i<100; i++)
     {
-        cout<<"The value of a at index "<< i<< " is "<<a[i]<<endl;
+        cout<<"The value of a at index "<< i<< " is: "<<a[i]<<endl;
     }
    
    

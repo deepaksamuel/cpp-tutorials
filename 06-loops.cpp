@@ -29,3 +29,4 @@ int main()
 //d) print out only if the value of i is odd
 //e) take the value of the loop variable as an user input
 //f) print the sequence: 1,1 then 1,2 then 1,3 ... 1,10 then 2,1 then 2,2 then 2,3 ... and so on until 10,10
+//g) print the sequence: 1.0, 1.1, 1.2, 1.3, 1.4 .... until 2

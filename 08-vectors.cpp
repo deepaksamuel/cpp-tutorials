@@ -1,31 +1,26 @@
 #include <iostream> 
+#include <vector> 
 
 using namespace std; 
 
+// A vector is similar to an array but which has more advanced features (not taught here) and for which you
+// need not know the size apriori 
 int main() 
 { 
-    int a[100]; // the number 100 defines the size of the array. The variable a is a one dimensional array of size 100
-    int b[150]; // this is also an 1d array of size 150
-    int c[10][10];// this is a 2d array of size 10 x 10
+    vector <int> a;
+    vector <float> b;
 
     
     for(int i=0; i<100; i++)
     {
-        a[i] =i;
-        b[149-i] =i;
-        if(i<10)
-        {
-            c[i][i] =i;
-        }
-
+        a.push_back(i);
+        b.push_back(i/10);
     }
-
-    for(int i=0; i<100; i++)
+    for(auto i=a.begin; i!=a.end(); i++)
     {
-        cout<<"The value of a at index "<< i<< " is "<<a[i]<<endl;
+        
     }
-   
-   
+    
     return 0;
 }
 
